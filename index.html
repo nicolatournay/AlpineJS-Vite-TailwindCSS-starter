@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpine.js Test</title>
+  <!-- <link href="/src/style.css" rel="stylesheet"> -->
+</head>
+<body>
+  <div class="flex h-screen justify-center items-center flex-col" x-data="{ count: 0 }">
+    <button class="bg-gray-900 text-white p-5 rounded-lg mb-5" @click="count++">Click Me</button>
+    <p>You've clicked the button <span x-text="count"></span> times.</p>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
